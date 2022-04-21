@@ -1,0 +1,64 @@
+body {
+    background-color: black;
+    text-align: center;
+}
+
+#main_page {
+    text-align: center;
+    background-color: rgb(233, 204, 125);
+    width: 100%;
+    height: 600px;
+    margin: 2.5% 0%;
+}
+
+#header {
+    width: 100%;
+    height: 10%;
+    background-color: rgb(148, 129, 77);
+}
+
+#aside {
+    display: grid;
+    grid-template-rows: 40% 20% 40%;
+    row-gap: 2%;
+    float: left;
+    width: 20%;
+    height: 70%;
+    background-color: rgb(148, 129, 77);
+    margin: 2% 2% 2% 0%;
+    padding: 2%;
+}
+
+.filter{
+    width: 100%;
+    height: 90%;
+    background-color: rgb(93, 81, 49);
+    padding: 2%;
+}
+
+#store {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    column-gap: 2%;
+    row-gap: 10%;
+    float: right;
+    width: 65%;
+    height: 70%;
+    background-color: rgb(148, 129, 77);
+    margin: 2% 0% 2% 2%;
+    padding: 2%;
+}
+
+.product {
+    width: 90%;
+    height: 100%;
+    background-color: rgb(93, 81, 49);
+    padding: 2%;
+}
+
+#footer {
+    clear: left;
+    width: 100%;
+    height: 12%;
+    background-color: rgb(148, 129, 77);
+}
