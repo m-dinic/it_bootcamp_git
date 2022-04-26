@@ -12,9 +12,35 @@ body {
 }
 
 #header {
-    width: 100%;
-    height: 10%;
+    position: fixed;
+    width: 99%;
+    height: 6%;
     background-color: rgb(148, 129, 77);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+li {
+    float: left;
+    height: 100%;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgba(233, 204, 125, 0.526);
 }
 
 #aside {
@@ -25,35 +51,59 @@ body {
     width: 20%;
     height: 70%;
     background-color: rgb(148, 129, 77);
-    margin: 2% 2% 2% 0%;
+    margin: 7% 2% 2% 0%;
     padding: 2%;
 }
 
-.filter{
+.filter {
     width: 100%;
     height: 90%;
     background-color: rgb(93, 81, 49);
     padding: 2%;
+    text-align: left;
+}
+
+input {
+    float: inline-start;
 }
 
 #store {
     display: grid;
     grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 26% 26% 26%;
     column-gap: 2%;
     row-gap: 10%;
     float: right;
     width: 65%;
     height: 70%;
     background-color: rgb(148, 129, 77);
-    margin: 2% 0% 2% 2%;
+    margin: 7% 0% 2% 2%;
     padding: 2%;
 }
 
 .product {
+    display: grid;
+    grid-template-columns: 40% 55%;
+    grid-template-rows: 100%;
+    column-gap: 2%;
+    row-gap: 10%;
     width: 90%;
     height: 100%;
     background-color: rgb(93, 81, 49);
     padding: 2%;
+}
+
+img {
+    width: 95%;
+    margin-top: 0;
+}
+
+.p_descript {
+    margin-top: -5%;
+}
+
+h3 {
+    margin-top: 2%;
 }
 
 #footer {
@@ -61,4 +111,479 @@ body {
     width: 100%;
     height: 12%;
     background-color: rgb(148, 129, 77);
+}
+@media (max-width:1200px){
+    body {
+        background-color: black;
+        text-align: center;
+    }
+    
+    #main_page {
+        text-align: center;
+        background-color: rgb(233, 204, 125);
+        width: 100%;
+        height: 600px;
+        margin: 2.5% 0%;
+    }
+    
+    #header {
+        position: fixed;
+        width: 99%;
+        height: 6%;
+        background-color: rgb(148, 129, 77);
+    }
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: transparent;
+    }
+    
+    li {
+        float: left;
+        height: 100%;
+    }
+    
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    li a:hover {
+        background-color: rgba(233, 204, 125, 0.526);
+    }
+    
+    #aside {
+        display: grid;
+        grid-template-rows: 40% 20% 40%;
+        row-gap: 2%;
+        float: left;
+        width: 10%;
+        height: 70%;
+        background-color: rgb(148, 129, 77);
+        margin: 7% 2% 2% 0%;
+        padding: 2%;
+    }
+    
+    .filter {
+        width: 100%;
+        height: 90%;
+        background-color: rgb(93, 81, 49);
+        padding: 2%;
+        text-align: left;
+    }
+    
+    input {
+        float: inline-start;
+    }
+    
+    #store {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 26% 26% 26%;
+        column-gap: 2%;
+        row-gap: 10%;
+        float: right;
+        width: 75%;
+        height: 70%;
+        background-color: rgb(148, 129, 77);
+        margin: 7% 0% 2% 2%;
+        padding: 2%;
+    }
+    
+    .product {
+        display: grid;
+        grid-template-columns: 40% 55%;
+        grid-template-rows: 100%;
+        column-gap: 2%;
+        row-gap: 10%;
+        width: 90%;
+        height: 100%;
+        background-color: rgb(93, 81, 49);
+        padding: 2%;
+    }
+    button{
+        width: 60%;
+        height: 25%;
+        font-size: large;
+    }
+    img {
+        width: 95%;
+        margin-top: 0;
+    }
+    
+    .p_descript {
+        margin-top: -5%;
+    }
+    
+    h3 {
+        margin-top: 2%;
+    }
+    
+    #footer {
+        clear: left;
+        width: 100%;
+        height: 12%;
+        background-color: rgb(148, 129, 77);
+    }
+}
+
+@media (max-width:923px) {
+    body {
+        background-color: black;
+        text-align: center;
+    }
+
+    #main_page {
+        text-align: center;
+        background-color: rgb(233, 204, 125);
+        width: 100%;
+        height: 1000px;
+        margin: 2.5% 0%;
+    }
+
+    #header {
+        position: fixed;
+        width: 99%;
+        height: 6%;
+        background-color: rgb(148, 129, 77);
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: transparent;
+    }
+
+    li {
+        float: left;
+        height: 100%;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: rgba(233, 204, 125, 0.526);
+    }
+
+    #aside {
+        display: grid;
+        grid-template-rows: 40% 20% 40%;
+        row-gap: 2%;
+        float: left;
+        width: 10%;
+        height: 60%;
+        background-color: rgb(148, 129, 77);
+        margin: 7% 2% 2% 0%;
+        padding: 2%;
+    }
+
+    .filter {
+        width: 100%;
+        height: 90%;
+        background-color: rgb(93, 81, 49);
+        padding: 2%;
+        text-align: left;
+    }
+
+    input {
+        float: inline-start;
+    }
+
+    #store {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 26% 26% 26%;
+        column-gap: 2%;
+        row-gap: 10%;
+        float: right;
+        width: 70%;
+        height: 60%;
+        background-color: rgb(148, 129, 77);
+        margin: 7% 0% 2% 2%;
+        padding: 2%;
+    }
+
+    .product {
+        display: grid;
+        grid-template-columns: 40% 55%;
+        grid-template-rows: 100%;
+        column-gap: 2%;
+        row-gap: 10%;
+        width: 90%;
+        height: 100%;
+        background-color: rgb(93, 81, 49);
+        padding: 2%;
+    }
+
+    img {
+        width: 95%;
+        margin-top: 0;
+    }
+
+    .p_descript {
+        margin-top: -5%;
+    }
+
+    h3 {
+        margin-top: 2%;
+    }
+
+    #footer {
+        clear: left;
+        width: 100%;
+        height: 12%;
+        background-color: rgb(148, 129, 77);
+    }
+}
+
+@media (max-width:768px) {
+    body {
+        background-color: black;
+        text-align: center;
+    }
+
+    #main_page {
+        text-align: center;
+        background-color: rgb(233, 204, 125);
+        width: 100%;
+        height: 600px;
+        margin: 2.5% 0%;
+    }
+
+    #header {
+        position: fixed;
+        width: 99%;
+        height: 6%;
+        background-color: rgb(148, 129, 77);
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: transparent;
+    }
+
+    li {
+        float: left;
+        height: 100%;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: rgba(233, 204, 125, 0.526);
+    }
+
+    #aside {
+        display: grid;
+        grid-template-rows: 45% 15% 40%;
+        row-gap: 2%;
+        float: left;
+        width: 20%;
+        height: 75%;
+        background-color: rgb(148, 129, 77);
+        margin: 7% 2% 2% 0%;
+        padding: 2%;
+    }
+
+    .filter {
+        width: 100%;
+        height: 90%;
+        background-color: rgb(93, 81, 49);
+        padding: 2%;
+        text-align: left;
+    }
+
+    input {
+        float: inline-start;
+    }
+
+    #store {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 30% 30% 30%;
+        column-gap: 2%;
+        row-gap: 5%;
+        float: right;
+        width: 68%;
+        height: 75%;
+        background-color: rgb(148, 129, 77);
+        margin: 7% 0% 2% 2%;
+        padding: 2%;
+    }
+
+    .product {
+        display: grid;
+        grid-template-columns: 40% 55%;
+        grid-template-rows: 100%;
+        column-gap: 2%;
+        row-gap: 10%;
+        width: 90%;
+        height: 100%;
+        background-color: rgb(93, 81, 49);
+        padding: 2%;
+    }
+
+    img {
+        width: 95%;
+        margin-top: 0;
+    }
+
+    .p_descript {
+        margin-top: -5%;
+    }
+
+    h3 {
+        margin-top: 2%;
+    }
+
+    p {
+        margin-top: 0%;
+    }
+
+    #footer {
+        clear: left;
+        width: 100%;
+        height: 12%;
+        background-color: rgb(148, 129, 77);
+    }
+}
+
+@media (max-width:576px) {
+    body {
+        background-color: black;
+        text-align: center;
+    }
+
+    #main_page {
+        text-align: center;
+        background-color: rgb(233, 204, 125);
+        width: 100%;
+        height: 600px;
+        margin: 2.5% 0%;
+    }
+
+    #header {
+        position: fixed;
+        width: 97.2%;
+        height: 6%;
+        background-color: rgb(148, 129, 77);
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: transparent;
+    }
+
+    li {
+        float: left;
+        height: 100%;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: rgba(233, 204, 125, 0.526);
+    }
+
+    #aside {
+        display: grid;
+        grid-template-columns: 35% 20% 35%;
+        grid-template-rows: 100%;
+        column-gap: 3%;
+        width: 96%;
+        height: 30%;
+        background-color: rgb(148, 129, 77);
+        margin: 10% 2% 2% 0%;
+        padding: 2%;
+    }
+
+    .filter {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(93, 81, 49);
+        padding: 2%;
+        text-align: left;
+    }
+
+    input {
+        float: inline-start;
+    }
+
+    #store {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 26% 26% 26%;
+        column-gap: 2%;
+        row-gap: 10%;
+        width: 96%;
+        height: 95%;
+        background-color: rgb(148, 129, 77);
+        margin: 2% 0% 2% 2%;
+        padding: 2%;
+    }
+
+    .product {
+        display: grid;
+        grid-template-columns: 40% 55%;
+        grid-template-rows: 100%;
+        column-gap: 2%;
+        row-gap: 10%;
+        width: 90%;
+        height: 100%;
+        background-color: rgb(93, 81, 49);
+        padding: 2%;
+    }
+
+    img {
+        width: 95%;
+        margin-top: 0;
+    }
+
+    .p_descript {
+        margin-top: -5%;
+    }
+
+    h3 {
+        margin-top: 2%;
+    }
+
+    #footer {
+        clear: left;
+        width: 100%;
+        height: 12%;
+        background-color: rgb(148, 129, 77);
+    }
+
 }
